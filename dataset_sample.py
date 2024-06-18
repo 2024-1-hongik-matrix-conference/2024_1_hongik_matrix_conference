@@ -58,7 +58,7 @@ with open(f'{cropped_target_dir}/{y_path}','w+') as cropped_label_txt :
             imgn2.paste(img,((max_L-width)//2,(max_L-height)//2))
 
 
-            # 이미지를 100X100으로 rescale
+            # 이미지를 200X200으로 rescale
             imgn1.thumbnail((200,200),Image.Resampling.LANCZOS)
             imgn2.thumbnail((200,200),Image.Resampling.LANCZOS)
             # 가공된 이미지 저장
